@@ -1,0 +1,66 @@
+<div class="reviews-track" id="reviews-track">
+                        </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main id="page-contacts" class="page">
+        <section class="contacts-view">
+            <div class="container">
+                <div class="contact-card">
+                    <h2>Свяжитесь с нами</h2>
+                    <div class="phone-big">+7 (939) 112-43-08</div>
+                    <p>г. Москва, ул. Профессиональная, д. 10</p>
+                    <div class="contact-apps">
+                        <a href="#" class="app-card wa">
+                            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="40">
+                            <span>Написать в WhatsApp</span>
+                        </a>
+                        <a href="#" class="app-card tg">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="40">
+                            <span>Написать в Telegram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal-overlay" id="orderModal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeOrderModal()">×</button>
+            <div id="order-form-step">
+                <h3>Оформление заявки</h3>
+                <p id="selected-service-name">Услуга: Дезинсекция</p>
+                
+                <div class="input-group">
+                    <label>Параметры помещения (м² или кол-во комнат)</label>
+                    <input type="text" id="area" placeholder="Например: 50 м2">
+                </div>
+                
+                <div class="input-group">
+                    <label>Желаемое время выезда</label>
+                    <input type="datetime-local" id="time">
+                </div>
+
+                <div class="input-group">
+                    <label>Ваш контактный номер</label>
+                    <input type="tel" id="phone" placeholder="+7 (___) ___-__-__">
+                </div>
+
+                <button class="btn-mega" onclick="submitFinalOrder()">ОТПРАВИТЬ ЗАЯВКУ</button>
+            </div>
+
+            <div id="order-success-step" style="display: none;">
+                <div class="success-icon">✅</div>
+                <h3>Заявка принята!</h3>
+                <p>Мы рассмотрим вашу заявку и ответим в ближайшее время. Наш специалист свяжется с вами для уточнения деталей.</p>
+                <button class="btn-order" onclick="closeOrderModal()">Понятно</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
